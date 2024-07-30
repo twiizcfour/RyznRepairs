@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #000000;
+            color: white;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            height: 50px;
+        }
+
+        header h1 {
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 50px;
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        header nav ul li {
+            margin: 0 10px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        header nav ul li a:hover {
+            background: #575757;
+            border-radius: 5px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 20px;
+            justify-content: center;
+        }
+
+        .gallery img {
+            max-width: 200px;
+            height: auto;
+        }
+
+    
+
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        section {
+            background: #ffffff;
+            margin: 1rem 0;
+            padding: 2rem;
+            border-radius: 5px;
+            color: #000000;
+        }
+
+        h1 {
+            text-align: center;
+            color: #000000;
+            margin-bottom: 1rem;
+        }
+
+        .service-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .service-item {
+            background: #ffffff;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            text-align: center;
+            width: 45%;
+            margin: 1rem 0;
+            color: #000000;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #000000;
+            color: #ffffff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        a {
+            color: #000000;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ryzn Repairs</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#services">Services & Prices</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#socials">Socials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+        </ul>
+    </div>
+
+    <main>
+        <section class="banner">
+            <h1>Ryzn Repairs</h1>
+            <div class="banner-image">
+                <img src="logo.jpg" alt="Ryzn Repairs Banner">
+            </div>
+        </section>
+
+    <main>
+        <section id="gallery">
+            <h1>Gallery</h1>
+            <div class="gallery">
+                <img src="gallery-image1.jpg" alt="Gallery Image 1">
+                <img src="gallery-image2.jpg" alt="Gallery Image 2">
+                <img src="gallery-image3.jpg" alt="Gallery Image 3">
+                <!-- Add more images as needed -->
+            </div>
+        </section>
+
+        <section id="about">
+            <h1>About Me</h1>
+            <p>Ryzn Repairs is a premier computer repair service dedicated to providing fast, reliable, and affordable solutions for all your tech needs. Located in Blackpool, we specialize in diagnosing and fixing a wide range of computer issues, from hardware malfunctions to software glitches. Our mission is to ensure that your technology operates smoothly, empowering you to stay connected and productive.</p>
+        </section>
+
+        <section id="services">
+            <h1>Services & Prices</h1>
+            <div class="service-list">
+                <div class="service-item">
+                    <h2>Build PC</h2>
+                    <p>price of PC + £20 could be more depends on type of build</p>
+                </div>
+                <div class="service-item">
+                    <h2>Monthly virus scan</h2>
+                    <p>£5 per month</p>
+                </div>
+                <div class="service-item">
+                    <h2>PC health increase</h2>
+                    <p>£10 per month</p>
+                </div>
+                <div class="service-item">
+                    <h2>Repair PC</h2>
+                    <p>Contact for a quote</p>
+                </div>
+                <div class="service-item">
+                    <h2>Keyboard Build</h2>
+                    <p>prices of parts + £30 labour</p>
+                </div>
+                <div class="service-item">
+                    <h2>Make a Program</h2>
+                    <p>Depends on length of project</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="location">
+            <h1>Location</h1>
+            <p>We will come to pick up your computer and drop it back off. This will be same day delivery and repair if possible </p>
+        </section>
+
+        <section id="socials">
+            <h1>Socials</h1>
+            <ul>
+                <li><a href="https://www.facebook.com/profile.php?id=61560949654487" target="_blank">Facebook</a></li>
+                <li><a href="https://x.com/RyznRepairs" target="_blank">Twitter</a></li>
+                <li><a href="https://www.tiktok.com/@ryznrepairs" target="_blank">Tiktok</a></li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h1>Contact</h1>
+            <p>Email: <a href="mailto:baggaleyjake236@gmail.com">baggaleyjake236@gmail.com </a></p>
+            <p>Phone: 07913119793</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 RyznRepairs. All rights reserved.</p>
+    </footer>
+</body>
+</html>
